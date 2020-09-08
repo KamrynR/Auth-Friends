@@ -22,7 +22,8 @@ export const CreateFriend = () => {
     };
 
     return (
-        <>
+        <div className='create-friend'>
+            <h3>Add Friend</h3>
             <form onSubmit={handleSubmit}>
                 <label for='name'>Name</label>
                 <input
@@ -47,8 +48,9 @@ export const CreateFriend = () => {
                 value={createFriends.email}
                 onChange={handleChange}
                 />
-                <button type='submit'>Sumbit</button>
+                <br/>
+                <button type='submit'>Submit</button>
             </form>
-        </>
+        </div>
     );
 };

@@ -27,24 +27,28 @@ const Login = () => {
     }
 
     return (
-        <>
+        <div className='login-cont'>
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
+                <label for='username'>Username</label>
                 <input
                 type="text"
                 name="username"
                 value={credentials.username}
                 onChange={handleChange}
                 />
+                <br/>
+                <label for='password'>Password</label>
                 <input
                 type="password"
                 name="password"
                 value={credentials.password}
                 onChange={handleChange}
                 />
+                <br/>
                 <button type='submit'>Log in</button>
             </form>
-        </>
+        </div>
     )
 }
 

@@ -7,22 +7,22 @@ import './App.css';
 
 function App() {
   return (
-    <>
-      <ul>
-        <li>
+    <div className='App-header'>
+      <div className='nav'>
+        <div>
           <Link to='/'>Login</Link>
-        </li>
-        <li>
+        </div>
+        <div>
           <Link to='/friends'>Friends</Link>
-        </li>
-      </ul>
+        </div>
+      </div>
       <Switch>
         <Route exact path='/'>
           <Login />
         </Route>
         <PrivateRoute path='/friends' component={Friends} />
       </Switch>
-    </>
+    </div>
   );
 }
 

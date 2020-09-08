@@ -15,16 +15,16 @@ const Friends = () => {
     return (
         <>  
             <CreateFriend />
-            <h2>Friends</h2>
-            <ul>
+            <h2>Friends List</h2>
+            <div className='friends-list'>
                 {friends.map(x => (
-                    <li key={x.id}>
+                    <div key={x.id} className='friend'>
                         <h4>{x.name}</h4>
                         <p>Age: {x.age}</p>
                         <p>Email: {x.email}</p>
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </>
   );
 };
